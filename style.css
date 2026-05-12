@@ -1,0 +1,311 @@
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: black;
+    color: white;
+    font-family: Arial;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #111;
+}
+
+nav a{
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+.hero{
+    height: 90vh;
+
+    background-image: linear-gradient(
+        rgba(0,0,0,0.7),
+        rgba(0,0,0,0.7)
+    ),
+    url('../img/fondo.jpg');
+
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+}
+
+.contenido-hero h2{
+    font-size: 60px;
+    margin-bottom: 20px;
+}
+
+.contenido-hero p{
+    font-size: 20px;
+    margin-bottom: 25px;
+}
+
+.btn-juegos {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #7b2cff;
+    color: white;
+    border-radius: 10px;
+    text-decoration: none;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+.btn-juegos:hover {
+    opacity: 0.8;
+}
+
+button:hover{
+    transform: scale(1.1);
+    background-color: #9d4dff;
+
+    box-shadow: 0px 0px 20px #7b2cff;
+}
+
+.juegos{
+    padding: 80px 50px;
+    background-color: #0a0a0a;
+}
+
+.titulo-juegos{
+    text-align: center;
+    font-size: 45px;
+    margin-bottom: 50px;
+}
+
+.contenedor-juegos{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.card{
+    width: 300px;
+
+    background-color: #151515;
+
+    border-radius: 20px;
+
+    overflow: hidden;
+
+    transition: 0.3s;
+
+    box-shadow: 0px 0px 10px rgba(123,44,255,0.2);
+}
+
+.card:hover{
+    transform: translateY(-10px);
+
+    box-shadow: 0px 0px 25px #7b2cff;
+}
+
+.card img{
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+}
+
+.card h3{
+    font-size: 28px;
+    margin: 20px;
+}
+
+.card p{
+    margin: 20px;
+    color: #ccc;
+}
+
+.card-link{
+    text-decoration: none;
+    color: white;
+}
+
+#minecraft-info{
+
+    padding: 120px 60px;
+
+    background-image:
+    linear-gradient(
+        rgba(0,0,0,0.8),
+        rgba(0,0,0,0.8)
+    ),
+    url('../img/minecraftfondo.jpg');
+
+    background-size: cover;
+    background-position: center;
+
+    text-align: center;
+}
+
+.info-contenido{
+
+    max-width: 900px;
+
+    margin: auto;
+
+    background-color: rgba(10,10,10,0.85);
+
+    padding: 50px;
+
+    border-radius: 25px;
+
+    border: 2px solid #7b2cff;
+
+    box-shadow: 0px 0px 25px #7b2cff;
+}
+
+.info-contenido h2{
+    font-size: 50px;
+
+    margin-bottom: 30px;
+
+    color: white;
+}
+
+.info-contenido h3{
+    margin-top: 25px;
+
+    color: #7b2cff;
+
+    font-size: 28px;
+}
+
+.info-contenido p{
+    margin-top: 10px;
+
+    color: #ccc;
+
+    font-size: 18px;
+}
+
+.barra {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.progreso{
+
+    height: 18px;
+
+    border-radius: 20px;
+
+    margin-top: 10px;
+
+    box-shadow: 0px 0px 10px currentColor;
+}
+
+.minecraft{
+    width: 100%;
+
+    background-color: #7b2cff;
+}
+
+.diversion{
+    width: 80%;
+
+    background-color: #00d9ff;
+}
+
+#mario-info{
+
+     padding: 120px 60px;
+
+    background-image:
+    linear-gradient(
+        rgba(0,0,0,0.8),
+        rgba(0,0,0,0.8)
+    ),
+    url('../img/mariofondo.jpg');
+
+    background-size: cover;
+    background-position: center;
+
+    text-align: center;
+}
+
+.mario{
+    width: 100%;
+
+    background-color: #7b2cff;
+}
+
+.dmario{
+    width: 100%;
+
+    background-color: #00d9ff;
+}
+
+#zelda-info{
+
+     padding: 120px 60px;
+
+    background-image:
+    linear-gradient(
+        rgba(0,0,0,0.8),
+        rgba(0,0,0,0.8)
+    ),
+    url('../img/zeldafondo.jpg');
+
+    background-size: cover;
+    background-position: center;
+
+    text-align: center;
+}
+
+.zelda{
+    width: 90%;
+
+    background-color: #7b2cff;
+}
+
+.dzelda{
+    width: 95%;
+
+    background-color: #00d9ff;
+}
+
+.info-contenido {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.btn-trailer {
+    display: inline-block;
+    padding: 15px 30px;
+    border-radius: 10px;
+    background-color: #7b2cff;
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+    transition: 0.3s;
+    margin-top: 10px;
+}
+
+.btn-trailer:hover {
+    opacity: 0.8;
+}
+
+h2, h3, p {
+    margin: 5px 0;
+}
+
+.info-contenido {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
